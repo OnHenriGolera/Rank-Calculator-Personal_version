@@ -1,0 +1,29 @@
+{
+    "EDM15": "1126-national-ffe-tiret-m15-epee-dames",
+    "EHM15": "1101-national-ffe-tiret-m15-epee-hommes",
+    "FDM15": "1127-national-ffe-tiret-m15-fleuret-dames",
+    "FHM15": "1102-national-ffe-tiret-m15-fleuret-hommes",
+    "SDM15": "1128-national-ffe-tiret-m15-sabre-dames",
+    "SHM15": "1129-national-ffe-tiret-m15-sabre-hommes",
+    
+    "EDM17": "1034-national-ffe-tiret-m17-epee-dames",
+    "EHM17": "1118-national-ffe-tiret-m17-epee-hommes",
+    "FDM17": "1035-national-ffe-tiret-m17-fleuret-dames",
+    "FHM17": "1036-national-ffe-tiret-m17-fleuret-hommes",
+    "SDM17": "1029-national-ffe-tiret-m17-sabre-dames",
+    "SHM17": "1030-national-ffe-tiret-m17-sabre-hommes",
+
+    "EDM20": "1028-national-ffe-tiret-m20-epee-dames",
+    "EHM20": "1027-national-ffe-tiret-m20-epee-hommes",
+    "FDM20": "1031-national-ffe-tiret-m20-fleuret-dames",
+    "FHM20": "1032-national-ffe-tiret-m20-fleuret-hommes",
+    "SDM20": "1016-national-ffe-tiret-m20-sabre-dames",
+    "SHM20": "1069-national-ffe-tiret-m20-sabre-hommes",
+
+    "EDSEN": "1148-national-ffe-tiret-seniors-epee-dames",
+    "EHSEN": "1033-national-ffe-tiret-seniors-epee-hommes",
+    "FDSEN": "1024-national-ffe-tiret-seniors-fleuret-dames",
+    "FHSEN": "1158-national-ffe-tiret-seniors-fleuret-hommes",
+    "SDSEN": "1025-national-ffe-tiret-seniors-sabre-dames",
+    "SHSEN": "1026-national-ffe-tiret-seniors-sabre-hommes"
+}
