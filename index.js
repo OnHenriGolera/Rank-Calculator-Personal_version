@@ -3,4 +3,5 @@ const { scrapeFFE } = require("./utilities/scrapper")
 const categories = Object.keys(ranking_links)
 const RankUpdater = require("./utilities/updateRanks")
 
-RankUpdater.updateRanks(ranking_links, true)
+// Update
+RankUpdater.updateRanks(ranking_links)
