@@ -2,36 +2,71 @@ const puppeteer = require('puppeteer')
 const text_cleaner = require("./text_cleaner")
 
 
-async function scrape(link, keys) {
+async function scrapeFFE(link, keys, multipage=false) {
 
-    const browser = await puppeteer.launch({})
-    const page = await browser.newPage()
 
-    await page.goto(link)
+    var pages = [".html"]
+    if (multipage == true){
 
-    var lines = await page.$$(".ligne-classmt")
+        const page_number_browser = await puppeteer.launch({})
+        const page_number_page = await page_number_browser.newPage()
+
+        await page_number_page.goto(link)
+
+        var page_number = parseInt(await page_number_page.$$(".pagination-bt", element => element.length) / 2)
+
+        if (await page_number_page.$(".pagination-bt") == null){
+            page_number = 1
+        }
+
+        page_number_browser.close()
+
+        
+
+        for (var i=0;i<(page_number);i++){
+            pages.push(`/page${i+1}.html`)
+        }
+
+    }
+
 
     var treated_lines = []
 
-    await new Promise((resolve, reject) => {
+    for (var i=0;i<pages.length;i++){
 
-        lines.forEach(async (column, i) => {
+        const browser = await puppeteer.launch({})
+        const page = await browser.newPage()
+        await page.goto(link + pages[i])
 
-            column = await (await column.getProperty('innerText')).jsonValue()
+        if (await page.$(".ligne-classmt") == null){
+            browser.close()
+            return {}
+        }
+        var lines = await page.$$(".ligne-classmt")
 
-            treated_lines.push( text_cleaner.cleanData(column, keys) )
-            
-            if (i === lines.length - 1) {
-                resolve()
-            }
+        await new Promise((resolve, reject) => {
+
+            lines.forEach(async (column, i) => {
+
+                column = await (await column.getProperty('innerText')).jsonValue()
+
+                treated_lines.push( text_cleaner.cleanData(column.replace(",","."), keys) )
+                
+                if (i === lines.length - 1) {
+                    resolve()
+                }
+
+            })
 
         })
 
-    })
-    console.log(treated_lines)
+        browser.close()
 
-    browser.close()
+    }
+
+
+    return treated_lines
 
 }
 
-exports.scrape = scrape
+exports.scrapeFFE = scrapeFFE

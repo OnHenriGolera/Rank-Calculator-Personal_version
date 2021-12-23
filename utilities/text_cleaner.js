@@ -3,7 +3,9 @@ const blackList = [
     "Prénom :\n",
     "Année de naissance :\n",
     "Club :\n",
-    "Nombre de points :\n"
+    "Nombre de points :\n",
+    "Rang :\n", //Pourquoi ya ça --' Celon la page on a pas le même texte
+    "Nbre de points :\n"
 ]
 
 function cleanData(string, keys){
