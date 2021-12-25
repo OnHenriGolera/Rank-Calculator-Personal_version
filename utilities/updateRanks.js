@@ -1,4 +1,4 @@
-const JSON2CSV = require("./JSON2CSV")
+const JSON2CSV = require("./conversion/JSON2CSV")
 const scrapper = require("./scrapper")
 const jsonfile = require('jsonfile')
 
@@ -17,7 +17,7 @@ async function updateRank(name, link){
         "points"
     ]
     var real_link = `https://www.escrime-ffe.fr/fr/vie-sportive/classements/${link}/classement-general`
-    var path = `./data/csv/${name}.csv`
+    var path = `./data/csv/ffe_ranking/${name}.csv`
 
     // Get data from scrapeFFE, save it
     var JSON_data = await scrapper.scrapeFFE(real_link, default_keys, true)

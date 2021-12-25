@@ -5,3 +5,4 @@ const RankUpdater = require("./utilities/updateRanks")
 
 // Update
 RankUpdater.updateRanks(ranking_links)
+
