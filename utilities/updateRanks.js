@@ -21,7 +21,6 @@ async function updateRank(name, link){
 
     // Get data from scrapeFFE, save it
     var JSON_data = await scrapper.scrapeFFE(real_link, default_keys, true)
-
     // Write JSON data on csv file
     JSON2CSV.JSON2CSV(JSON_data, path)
 

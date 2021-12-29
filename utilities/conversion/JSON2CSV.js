@@ -38,13 +38,12 @@ function JSON2CSV(JSON_dic, outputFile){
         }
 
     }
-
+    
     // Write data in CSV file
-    fs.writeFile(outputFile, string_output, (err) => {
-        if (err){
-          console.log(err)
-        }
-    })
+    if (fs.existsSync(outputFile)){
+        fs.unlinkSync(outputFile)
+    }
+    fs.writeFileSync(outputFile,string_output) 
 
 }
 

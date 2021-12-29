@@ -1,4 +1,4 @@
-const FFF2JSON = require("./conversion/FFF2JSON")
+//const FFF2JSON = require("./conversion/FFF2JSON")
 
 function formulae(F, rank, player_number){
 
@@ -7,6 +7,8 @@ function formulae(F, rank, player_number){
 }
 
 function competition(FORCE, dDay, firstDay=[]){
+
+    if (firstDay===undefined){ firstDay = [] }
 
     var true_first_day = firstDay.slice(dDay.length+1, firstDay.length)
 
@@ -27,11 +29,11 @@ function competition(FORCE, dDay, firstDay=[]){
 
     }
 
-    console.log(real_rank)
-
     return real_rank
 
 }
 
-competition(11300, FFF2JSON.FFF2JSON("./data/other/henin-dimanche.fff"), FFF2JSON.FFF2JSON("./data/other/henin-samedi.fff")) // Henin Beaumont
+exports.competition = competition
+
+//competition(11300, FFF2JSON.FFF2JSON("./data/other/henin-dimanche.fff"), FFF2JSON.FFF2JSON("./data/other/henin-samedi.fff")) // Henin Beaumont
 //competition(12800, FFF2JSON.FFF2JSON("./data/other/paris.fff")) // Paris

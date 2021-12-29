@@ -1,98 +1,98 @@
 {
     "EDM15": {
         "link": "1126-national-ffe-tiret-m15-epee-dames",
-        "update": 1640268707658
+        "update": 1640781345546
     },
     "EHM15": {
         "link": "1101-national-ffe-tiret-m15-epee-hommes",
-        "update": 1640268710974
+        "update": 1640781351020
     },
     "FDM15": {
         "link": "1127-national-ffe-tiret-m15-fleuret-dames",
-        "update": 1640268717091
+        "update": 1640781366559
     },
     "FHM15": {
         "link": "1102-national-ffe-tiret-m15-fleuret-hommes",
-        "update": 1640268723983
+        "update": 1640781381319
     },
     "SDM15": {
         "link": "1128-national-ffe-tiret-m15-sabre-dames",
-        "update": 1640268730161
+        "update": 1640781397315
     },
     "SHM15": {
         "link": "1129-national-ffe-tiret-m15-sabre-hommes",
-        "update": 1640268736652
+        "update": 1640781405939
     },
     "EDM17": {
         "link": "1034-national-ffe-tiret-m17-epee-dames",
-        "update": 1640268745824
+        "update": 1640781418470
     },
     "EHM17": {
         "link": "1118-national-ffe-tiret-m17-epee-hommes",
-        "update": 1640268752166
+        "update": 1640781430827
     },
     "FDM17": {
         "link": "1035-national-ffe-tiret-m17-fleuret-dames",
-        "update": 1640268758961
+        "update": 1640781441802
     },
     "FHM17": {
         "link": "1036-national-ffe-tiret-m17-fleuret-hommes",
-        "update": 1640268765146
+        "update": 1640781451805
     },
     "SDM17": {
         "link": "1029-national-ffe-tiret-m17-sabre-dames",
-        "update": 1640268771465
+        "update": 1640781465972
     },
     "SHM17": {
         "link": "1030-national-ffe-tiret-m17-sabre-hommes",
-        "update": 1640268776796
+        "update": 1640781473380
     },
     "EDM20": {
         "link": "1028-national-ffe-tiret-m20-epee-dames",
-        "update": 1640268784168
+        "update": 1640781483630
     },
     "EHM20": {
         "link": "1027-national-ffe-tiret-m20-epee-hommes",
-        "update": 1640268790510
+        "update": 1640781492154
     },
     "FDM20": {
         "link": "1031-national-ffe-tiret-m20-fleuret-dames",
-        "update": 1640268796757
+        "update": 1640781504972
     },
     "FHM20": {
         "link": "1032-national-ffe-tiret-m20-fleuret-hommes",
-        "update": 1640268802616
+        "update": 1640781513796
     },
     "SDM20": {
         "link": "1016-national-ffe-tiret-m20-sabre-dames",
-        "update": 1640268809479
+        "update": 1640781525538
     },
     "SHM20": {
         "link": "1069-national-ffe-tiret-m20-sabre-hommes",
-        "update": 1640268815744
+        "update": 1640781531059
     },
     "EDSEN": {
         "link": "1148-national-ffe-tiret-seniors-epee-dames",
-        "update": 1640268822128
+        "update": 1640781539474
     },
     "EHSEN": {
         "link": "1033-national-ffe-tiret-seniors-epee-hommes",
-        "update": 1640268828247
+        "update": 1640781553886
     },
     "FDSEN": {
         "link": "1024-national-ffe-tiret-seniors-fleuret-dames",
-        "update": 1640268834221
+        "update": 1640781577257
     },
     "FHSEN": {
         "link": "1158-national-ffe-tiret-seniors-fleuret-hommes",
-        "update": 1640268840231
+        "update": 1640781586496
     },
     "SDSEN": {
         "link": "1025-national-ffe-tiret-seniors-sabre-dames",
-        "update": 1640268846254
+        "update": 1640781601151
     },
     "SHSEN": {
         "link": "1026-national-ffe-tiret-seniors-sabre-hommes",
-        "update": 1640268853003
+        "update": 1640781610399
     }
 }
